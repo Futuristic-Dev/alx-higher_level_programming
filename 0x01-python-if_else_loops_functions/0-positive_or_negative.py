@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import random 
+import random
 number = random.randint(-10, 10)
 
 # Print out positve number if number is greater than 0
@@ -12,4 +12,4 @@ elif number == 0:
 
 # Print negative if otherwise
 else:
-    print("{:d} is negative".format(number))  
+    print("{:d} is negative".format(number))
