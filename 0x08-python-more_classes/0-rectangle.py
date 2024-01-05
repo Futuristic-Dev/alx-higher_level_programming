@@ -1,12 +1,12 @@
 #!/usr/bin/python3
+"""
+Write a class that defines a Rectangle.
 
-    """
-    Write a class that defines a Rectangle.
-    Empty class. Pass the ball to the next player.
-    """
+Empty class. Pass the ball to the next player.
+"""
 
-    class Rectangle:
-        """An empty class function.
-        """
 
-        pass
+class Rectangle:
+    """An empty class function."""
+
+    pass
