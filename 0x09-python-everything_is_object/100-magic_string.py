@@ -1,15 +1,12 @@
 #!/usr/bin/python3
 
-"""Locked class module."""
+"""
+Write a function that returns a string "BestSchool".
+
+N times the number of the iteration.
+"""
 
 
-
-class LockedClass:
-    """
-    Prevents user from dynamically creating any new instances.
-
-    Instance attributes, except if new attribute is called.
-    `first_name`
-    """
-    __slots__ = ('first_name')
-    pass
+def magic_string(string=[]):
+    string += ["BestSchool"]
+    return ", ".join(string)
