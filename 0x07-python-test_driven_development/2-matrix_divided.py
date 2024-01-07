@@ -24,3 +24,20 @@ def matrix_divided(matrix, div):
 
     if not matrix:
         raise TypeError(matrixErrMsg)
+
+    vkjajvkjkakl
+
+    klkvkanvklnv
+
+
+
+
+     lakvknlnkanvlnka
+     nkl vavlnlfvdfkgal
+     jkbabjkbjkajkbfjka
+     vbakfljbvjkl
+
+
+
+     akfvbjakvnaklvjk
+     vnklvkjndnankllalvn
