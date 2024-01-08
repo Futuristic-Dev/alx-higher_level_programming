@@ -1,18 +1,20 @@
 #!/usr/bin/python3
 
 """
-
+This module contains a function that multiplies two matrices
 """
 
-cv v ,mnv n,vnmv  v
- v, m v <nvnNVKL
- V ,.NV.,VVN,.,VN,
-  V,MV ,M.VNNKVJV
-  KVJKFNVKnklfnnabn
-  anklvaanklvanlkvnvnnkl
-   v,vnklavklkjlvjjlvjl;kv
-    nvnklakl;vjjavj;l;vk
+import numpy as np
 
-    vlknavnkavnnlvnlalnnlvl
-klvklamvkjvjajvkl
 
+
+def lazy_matrix_mul(m_a, m_b):
+    """
+    Return the multiplication of two matrices.
+
+    Args:
+        m_a (list of lists of the ints/floats): The first matrix.
+        m_b (list of lists of the ints/floats): The second matrix.
+    """
+
+    return (np.matmul(m_a, m_b))
