@@ -11,5 +11,3 @@ that prints the list, but sorted(ascending sort).
 def print_sorted(self):
     "Prints a sorted list that is inherited from a class."
     print(sorted(self))
-
-
