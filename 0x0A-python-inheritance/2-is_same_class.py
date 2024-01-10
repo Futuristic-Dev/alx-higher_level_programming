@@ -5,8 +5,11 @@ of the specified class, otherwise FALSE."""
 
 
 def is_same_class(obj, a_class):
-    """Create a function that validates if an object is exactly\
+    """Create a function that validates if an object is exactly\n
        an instance of the specified class."""
 
-       return (type(obj) == a_class)
+       if type(obj) is a_class:
+           return True
+       else:
+           return False
     

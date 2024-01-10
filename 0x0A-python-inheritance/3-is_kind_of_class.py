@@ -8,4 +8,6 @@ inheritance of a class that inherited from the specified class; otherwise FALSE.
 
 def is_kind_of_class(obj, a_class):
     """Validate if the object is instance of a class."""
-    return (isinstance(obj, a_class))
+    if isinstance(obj, a_class):
+        return (True)
+    return (False)
