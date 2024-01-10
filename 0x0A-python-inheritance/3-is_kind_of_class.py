@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 
 """
-Create a function that returns TRUE if the object is an instance of, or if the object is an\n
-inheritance of a class that inherited from the specified class; otherwise FALSE.
+Create a function that returns TRUE if the object is an instance of.
+
+Or if the object is an inheritance of a class that inherited.
+From the specified class; otherwise FALSE.
 """
 
 
