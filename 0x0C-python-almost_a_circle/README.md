@@ -25,7 +25,6 @@ To successfully complete this project, it is recommended to read or watch materi
 - Args and kwargs in Python
 - JSON encoder and decoder in Python
 - Unittest module for Python testing
-- Python test cheatsheet
 
 ## Learning Objectives
 
