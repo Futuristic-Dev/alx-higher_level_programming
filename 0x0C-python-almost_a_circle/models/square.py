@@ -47,8 +47,38 @@ class Square(Rectangle):
             self.weight = value
 
         def __str__(self):
+            """Print out string representation of the square instance."""
+            return("[Square] ({}) {}/{} - {}".format(self.id,
+                self.x, self.y, self.width))
+
+        def update(self, *args, **kwargs):
+            """Assign arguments or keyword args to attribute."""
+            if args:
+                if len(args) >= 1:
+                    self.id = args[0]
+                if len(args) >= 2:
+                    self.size = args[1]
+                if len(args) >= 3:
+                    self.x = args[2]
+                if len(args) >= 4:
+                    self.y = args[3]
+            else:
+                keys = ['id', 'size', 'x', 'y']
+                if kwargs is not None:
+                    for key, value in kwargs.items():
+                        if key in keys:
+                            setattr(self, key, value)
+
+        def to_dictionary(self):
             """
-            Print out string representation of the square instance.
+            Create a dictionary representation of square instance.
 
             Returns:
-                str: string in the format [square] (<id>) <x>/
+                dictionary: Dictionary contains id, size, x and y.
+            """
+            return {
+                    'id': self.id,
+                    'size': self.width,
+                    'x': self.x,
+                    'y': self.y
+                    }
