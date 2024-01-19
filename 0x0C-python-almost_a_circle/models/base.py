@@ -115,8 +115,64 @@ class Base:
                 reader = csv.reader(f)
                 for row in reader:
                     if cls.__name__ == "Rectangle":
-                        data = {"id": int(row[0]),
+                        data = {
+                                "id": int(row[0]),
                                 "width": int(row[1]),
-                                "height": int(row)
+                                "height": int(row[2]),
+                                "x": int(row[3]),
+                                "y": int(row[4])
+                                }
+
+                    if  cls.__name__ = "Square":
+                        data = {
+                                "id": int(row[0]),
+                                "size": int(row[1]),
+                                "x": int(row[2]),
+                                "y": int(row[3]),
+                                }
+                        instance = cls.create(**data)
+                        instance_list.append(instance)
+            return instance_list
+
+        @staticmethod
+        def draw(list_rectangles, list_squares):
+            """
+            Draw rectangles and squares using the Turtle graphics module
+
+            Args:
+                list_rectangles (list): A list of Rectangle instances.
+                list_squares (list): A list of Square instances.
+            Returns:
+                None
+            """
+            
+            window = turtle.Screen()
+            window.bgcolor("white")
 
 
+            pen = turtle.Turtle()
+            pen.speed(2)
+
+            for shape in list_rectangles:
+                pen.penup()
+                pen.goto(shape.x, shape.y)
+                pen.pendown()
+                pen.color("blue")
+                for x in range(2):
+                    pen.forward(rect.width)
+                    pen.left(90)
+                    pen.forward(rect.height)
+                    pen.left(90)
+
+
+            for s_box in list_squares:
+                pen.penup()
+                pen.goto(s_box.x, s_box.y)
+                pen.pendown()
+                pen.color("green")
+                for y in range(4):
+                    pen.forward(s_box.size)
+                    pen.left(90)
+
+
+            window.exitonclick()
