@@ -2,7 +2,7 @@
 """
 Prints a number followed by Battery street.
 
-Followed by a new line. 
+Followed by a new line.
 """
 
 number = 98
